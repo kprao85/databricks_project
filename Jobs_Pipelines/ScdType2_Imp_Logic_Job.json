@@ -1,0 +1,31 @@
+{
+  "name": "ScdType2_Imp_Logic_Job",
+  "email_notifications": {
+    "no_alert_for_skipped_runs": false
+  },
+  "webhook_notifications": {},
+  "timeout_seconds": 0,
+  "max_concurrent_runs": 1,
+  "tasks": [
+    {
+      "task_key": "ScdType2_Imp_logic_job",
+      "run_if": "ALL_SUCCESS",
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/kpraoaws@gmail.com/databricks_project/raw/SCDType2_logic",
+        "source": "WORKSPACE"
+      },
+      "timeout_seconds": 0,
+      "email_notifications": {},
+      "webhook_notifications": {}
+    }
+  ],
+  "git_source": {
+    "git_url": "https://github.com/kprao85/databricks_project.git",
+    "git_provider": "gitHub",
+    "git_commit": "main"
+  },
+  "queue": {
+    "enabled": true
+  },
+  "performance_target": "PERFORMANCE_OPTIMIZED"
+}
